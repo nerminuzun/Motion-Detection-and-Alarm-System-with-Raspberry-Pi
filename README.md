@@ -1,1 +1,0 @@
-# Motion-Detection-and-Alarm-System-with-Raspberry-Pi
