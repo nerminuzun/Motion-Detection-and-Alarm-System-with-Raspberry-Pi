@@ -22,16 +22,19 @@ time.sleep(1)
 print("Çalışmaya Hazır")
 while True: 
     if io.input(18):
-        for i in range(0,3):
+        
+        for i in range(0,4):
             blink(11)
         print("Hareket Algılandı")
         io.output(16, False)
-        time.sleep(5);
-        for i in range(0,3):
+        exec(open('buzzer_melody.py').read())
+        time.sleep(1);
+   
+        for i in range(0,4):
             blink(13)
         print("Hareket Yok")
         io.output(16, True) 
-        time.sleep(5)
+        time.sleep(1)
     time.sleep(1)
 
 #Buzzer "buzzer_melody.py" kodu
